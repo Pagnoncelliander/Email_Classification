@@ -30,3 +30,11 @@ Data Cleaning Steps:
 3. check and handle missing values (fill NaN with 0).
 4. Check for duplicate rows and remove them if any.
 5. Verify data integrity after cleaning.
+
+
+#### Explained Variance 
+
+In this step, I create a graph to understand which principal component is most suitable for applying PCA. The column spam (from the spam_dataset) is the independent variable that has been removed from the dataset. The explained_variance_ratio_ is an attribute of the PCA object that indicates the proportion of variance explained by each of the principal components. The graph shows the relationship between the number of components (ranging from 2 to 10) and the performance of the analysis. In this case, I tested around 10 different numbers of components, and 10 components proved to be the optimal choice for achieving better analytical performance.
+
+1. Get the cumulative explained variance
+2. Create a graph to check the number of component for analyct
